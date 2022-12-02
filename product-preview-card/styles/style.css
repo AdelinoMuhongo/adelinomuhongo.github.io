@@ -134,18 +134,18 @@ button.shopping-card-button:hover
 
 @media only screen and (max-width: 375px)
 {
-    .container{
+    .main-container{
         margin: 15px auto;
         padding: 0 15px;
     }
 
-    .parfum-img img
+    .parfum-image img
     {
         max-height: 290px;
         
     }
 
-    .right-container
+    .right-column
     {
         padding: 24px;
     }
