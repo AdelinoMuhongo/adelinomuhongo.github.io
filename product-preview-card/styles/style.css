@@ -151,7 +151,7 @@ button.shopping-card-button:hover
     }
     h5.parfum-header, h1.parfum-title, p.parfum-description, .price,.attribution
     {
-        padding-bottom: 10px;
+        padding-bottom: 16px;
     }
     h1.parfum-title
     {
