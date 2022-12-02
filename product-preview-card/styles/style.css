@@ -41,11 +41,16 @@ body
     border-radius: 15px;
 }
 
-.parfum-image img 
+.parfum-desktop-image img 
 {
     display: inherit;
     max-width: 100%;
 
+}
+
+.parfum-mobile-image
+{
+    display: none;
 }
 
 .right-column
@@ -157,33 +162,54 @@ button.shopping-card-button:hover
 
 .attribution
 {
-    font-family: 'Fraunces',serif;
-    position: flex;
-    bottom: 0;
+    font-size:10px;
+    line-height: 20px;
+    text-align:center;
     width: 100%;
-    height: 30px;   /* Height of the footer */
-    font-size: 10px;
-    justify-content:flex-end;
     
 }
 
 
-@media only screen and (max-width: 375px)
+
+
+
+
+@media only screen and (max-width: 700px)
 {
-    .main-container{
-        margin: 15px auto;
-        padding: 0 15px;
+    body
+    {
+        height: 100%;
+        margin:0;
+        background-color:#F2EAE2;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
     }
 
-    .parfum-image img
+    .table{
+        grid-template-columns:  1fr;
+        }
+        .parfum-desktop-image img 
+        {
+            max-height: 450px;
+            width:100%;
+            object-fit: cover;
+    
+        }
+
+
+    .parfum-desktop-image 
     {
-        max-height: 290px;
+        display:none;
         
     }
 
     .right-column
     {
-        padding: 24px;
+        width: 95%;
+        max-width: 600px;
+        margin: 1.75em auto;
+        border-radius: 10px;
+        overflow: hidden;
     }
     h5.parfum-header, h1.parfum-title, p.parfum-description, .price,.attribution
     {
@@ -207,30 +233,12 @@ button.shopping-card-button:hover
         padding: 12px 0 ;
         font-size: 13px;
     }
+
+    .parfum-mobile-image 
+    {
+        display:flex; 
+        width: 100%;
+        height: 100%;
+    }
+
 }
-
-
-@media only screen and (max-width: 628px)
-{
-    .table{
-    grid-template-columns:  1fr;
-    }
-    .parfum-image img 
-    {
-        max-height: 450px;
-        width:100%;
-        object-fit: cover;
-
-    }
-
-    .right-column
-    {
-        display: block;
-    }
-    h5.parfum-header, h2.parfum-title, p.parfum-description, .price, .attribution
-    {
-        padding-bottom: 23px;
-    }
-}
-
-
