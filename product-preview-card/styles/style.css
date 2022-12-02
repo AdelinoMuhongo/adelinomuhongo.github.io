@@ -146,7 +146,7 @@ button.shopping-card-button
     font-weight: 700;
     cursor:pointer;
     transition:  background-color .3s ease;
-    width: 100;
+    width: 100%;
 }
 
 button.shopping-card-button:hover
@@ -195,7 +195,11 @@ button.shopping-card-button:hover
     }
     p.parfum-description
     {
-        font-size: 22px;
+        font-size: 12px;
+    }
+    p.parfum-new-price
+    {
+        font-size: 23px;
     }
 
     button.shopping-card-button
@@ -225,7 +229,7 @@ button.shopping-card-button:hover
     }
     h5.parfum-header, h2.parfum-title, p.parfum-description, .price, .attribution
     {
-        padding-bottom: 20px;
+        padding-bottom: 23px;
     }
 }
 
