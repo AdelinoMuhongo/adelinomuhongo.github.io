@@ -170,7 +170,7 @@ button.shopping-card-button:hover
 }
 
 
-@media only screen and (max-width: 650px)
+@media only screen and (max-width: 628px)
 {
     .table{
     grid-template-columns:  1fr;
